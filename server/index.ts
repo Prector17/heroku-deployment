@@ -9,6 +9,8 @@ app.use(express.static(clientPath));
 
 console.log(process.env.GREETING);// PROCESS IS A  that looks in vash for a variable
 
-app.listen(3000, ()=>{
+//we need to implement the new chanel path
+
+app.listen(process.env.PORT||3000, ()=>{
     console.log("Listening on port 3000");
 });
